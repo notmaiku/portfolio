@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-family: "helvetica neue";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.site-wrap {
+  max-width: 1000px;
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+body.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+header {
+  text-align: center;
+  height: 50vh;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  background: url('../i/bg2crop.png') no-repeat center top fixed;
+}
+
+h1 {
+  color: white;
+  font-size: 7vw;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+body.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+nav ul :hover {
+  color: rgba(158, 243, 217, 0.829);
+  font-size: 24px;
+}
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+li.logo a {
+  color: black;
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+
+nav rotuer-link {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact li {
+  margin: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact li h3 {
+  margin-right: 10px;
+}
+
+.contact li h2 {
+  font-size: 32;
+  text-shadow: 12px;
+}
+
+.submit {
+  width: 180px;
+  height: 50px;
+  border: 0;
+  box-shadow: 2;
+  background: rgba(192, 218, 235, 0.582);
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.reset {
+  width: 80px;
+  height: 50px;
+  border: 0;
+  box-shadow: 2;
+  background: rgba(192, 218, 235, 0.582);
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.logopic {
+  max-width: 350px;
+  width:100%;
+  height: 350px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
+.shirt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 3px 3px  3px  3px   #1BC3D5;
+}
+
+.shirt-img {
+  width: 100%;
+}
+
+audio {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.315);
+}
+
+.songs ul {
+  padding: 20px;
+  background: rgb(160, 221, 240, .5);
+}
+
+.songs p {
+  color: rgba(53, 53, 53, 0.904);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+  text-shadow: .5px .5px rgba(34, 34, 34, 0.5);
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 6px 6px #1BC3D5;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+
+.prev{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;;
+}
+
+.next{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;;
+}
