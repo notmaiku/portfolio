@@ -1,11 +1,9 @@
 <template>
-  <div>
     <div class="slider">
-      <div v-for="(pic, index) in slides" :key="index" >
-        {{slides.pic}}
-      </div>
+      <!-- <div v-for="(slide, index) in slides"  :key="index">
+        <img v-bind:src="slide.url" :alt="slide.alt">
+        </div> -->
     </div>
-  </div>
 </template>
 
 <script>
@@ -13,27 +11,24 @@ import * as jQuery from "jquery";
 import "slick-carousel";
 export default {
   name: "slider",
-  data(){
-    return{
-
-    slides:[
-      {pic: 'src/assets/i/1.png'},
-      {pic: 'src/assets/i/1.png'},
-      {pic: 'src/assets/i/1.png'}
-    ]
-    }
+  data() {
+    return {
+      slides: [
+        { url: "https://i.postimg.cc/NF43bXP3/1.png", alt:"flower" },
+        { url: "https://i.postimg.cc/QChLpmSg/2.png", alt:"NA League of Legends Worlds game" },
+        { url: "https://i.postimg.cc/Kv1XY4Tj/IMG-0516.jpg", alt:"Keyboard" }
+      ],
+      slider: null
+    };
   },
-  created() {
-    $(document).ready(function() {
-      $(".slider").slick({
-        arrows: true,
+  mounted() {
+      this.slider = $(".slider").slick({
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
         prevArrow: $(".prev"),
         nextArrow: $(".next")
       });
-    });
   }
 };
 </script>

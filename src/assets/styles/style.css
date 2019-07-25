@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   background: #eeeeee;
-  font-family: "helvetica neue";
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 200;
 }
@@ -16,6 +16,7 @@ body {
   box-sizing: inherit;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .site-wrap {
   max-width: 1000px;
   margin: 70px auto;
@@ -47,7 +48,7 @@ h1 {
 }
 
 
-nav {
+nav#main {
   background: black;
   top: 0;
   width: 100%;
@@ -56,12 +57,12 @@ nav {
   z-index: 1;
 }
 
-body.fixed-nav nav {
+body.fixed-nav nav#main {
   position: fixed;
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+nav#main ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -70,16 +71,17 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav ul :hover {
+nav#main ul :hover {
   color: rgba(158, 243, 217, 0.829);
   font-size: 24px;
 }
-nav li {
+nav#main li {
   flex: 1;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 
 li.logo {
@@ -99,9 +101,8 @@ li.logo a {
   max-width: 500px;
 }
 
-nav rotuer-link {
+ul a {
   text-decoration: none;
-  padding: 20px;
   display: inline-block;
   color: white;
   transition: all 0.2s;
@@ -223,3 +224,10 @@ audio {
   top: 0;
   height: 100%;;
 }
+
+/* footer */
+footer{text-align: center; background-color: rgb(133, 133, 133); padding: 1px;}
+footer ul{display: flex; list-style-type: none; width: 100%;justify-content: center; align-items: center;}
+footer li{margin: 0 50px;}
+footer li a:hover{color: rgba(158, 243, 217, 0.829);}
+footer p{font-size: 16px;}
