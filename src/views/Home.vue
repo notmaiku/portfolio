@@ -16,6 +16,7 @@
     </p>
     <hr />
     <p>Some pictures to make this page feel less lonely. You can drag to slide.</p>
+    <Slider/>
   </div>
   <Footer/>
 </body>

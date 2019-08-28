@@ -12,6 +12,7 @@
     "jquery": "^3.4.1",
     "slick-carousel": "^1.8.1",
     "vue": "^2.6.10",
+    "vue-carousel": "^0.18.0",
     "vue-router": "^3.0.3"
   },
   "devDependencies": {
