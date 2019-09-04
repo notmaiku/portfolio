@@ -1,6 +1,6 @@
 <template>
   <div class="slider">
-    <carousel :per-page="1">
+    <carousel :per-page="1" :autoplay="true">
       <slide v-for="(slide, index) in slides" :key="index">
         <img v-bind:src="slide.url" :alt="slide.alt" />
       </slide>
@@ -9,8 +9,6 @@
 </template>
 
 <script>
-import * as jQuery from "jquery";
-import "slick-carousel";
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
@@ -32,15 +30,6 @@ export default {
       slider: null
     };
   },
-  mounted() {
-    // this.slider = $(".slider").slick({
-    //   autoplay: true,
-    //   speed: 2000,
-    //   autoplaySpeed: 2000,
-    //   prevArrow: $(".prev"),
-    //   nextArrow: $(".next")
-    // });
-  }
 };
 </script>
 
