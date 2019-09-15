@@ -16,7 +16,6 @@ body {
   box-sizing: inherit;
 }
 
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .site-wrap {
   max-width: 1000px;
@@ -57,7 +56,6 @@ nav#main {
   position: relative;
   z-index: 1;
 }
-nav#main {position:sticky; top:0px;}:where
 
 body.fixed-nav nav#main {
   position: fixed;
@@ -207,6 +205,7 @@ audio {
   height: auto;
 }
 
+nav#main {position:sticky; top:0px;}
 
 .prev{
   display: flex;

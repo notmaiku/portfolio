@@ -24,7 +24,7 @@ export default new Router({
     },
     {
       path: "/works",
-      name: "Works",
+      name: "works",
       meta: {title: "Works"},
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
