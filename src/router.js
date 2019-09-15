@@ -7,13 +7,13 @@ export default new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [{
-      path: "/",
+      path: "*",
       name: "home",
       component: Home,
       meta: {title: "home"}
     },
     {
-      path: "/Exp",
+      path: "/exp",
       name: "exp",
       meta: {title: "Experience"},
       // route level code-splitting
@@ -23,7 +23,7 @@ export default new Router({
         import( /* webpackChunkName: "about" */ "./views/Exp.vue")
     },
     {
-      path: "/Works",
+      path: "/works",
       name: "Works",
       meta: {title: "Works"},
       // route level code-splitting
