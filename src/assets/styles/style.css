@@ -41,12 +41,21 @@ header {
   background: url('../i/bg2crop.png') no-repeat center top fixed;
 }
 
+div .info {
+  border-bottom: solid rgb(101, 189, 177) 3px;
+  border-top: solid rgb(101, 189, 177) 3px;
+  padding-bottom: 10px;
+
+}
 h1 {
   color: white;
   font-size: 7vw;
   text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+h3 {
+  font-size: 24px;
+}
 
 nav#main {
   background: black;
@@ -223,6 +232,23 @@ nav#main {position:sticky; top:0px;}
   right: 0;
   top: 0;
   height: 100%;;
+}
+
+
+/* experience */
+.exp h1 {
+  font-size: 34px;
+  color: rgb(101, 189, 177);
+  text-shadow: none;
+}
+.exp h3 {
+  font-size: 24px;
+  border-bottom: solid rgb(101, 189, 177) 3px;
+  padding-bottom: 10px;
+}
+.exp h4 {
+  font-size: 42px;
+  text-decoration: underline;
 }
 
 /* footer */

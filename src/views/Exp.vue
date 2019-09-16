@@ -1,5 +1,5 @@
 <template>
-<body>
+<body class="exp">
   <Header />
   <Navigation />
   <main class="site-wrap">
@@ -66,20 +66,3 @@ export default {
   }
 };
 </script>
-
-<style>
-h1 {
-  font-size: 34px;
-  color: rgb(101, 189, 177);
-  text-shadow: none;
-}
-h3 {
-  font-size: 24px;
-  border-bottom: solid rgb(101, 189, 177) 3px;
-  padding-bottom: 10px;
-}
-h4 {
-  font-size: 42px;
-  text-decoration: underline;
-}
-</style>

@@ -1,10 +1,11 @@
 <template>
-<body>
+<body class="home">
   <Header />
   <Navigation />
   <div class="site-wrap">
     <h2>Michael Davis</h2>
-    <p>Self-learning software developer :wq</p>
+    <h3>Self-learning software developer :wq</h3>
+    <div class="info">
     <p>
       Junior Software Dev that had his first coding exprience while working on a wireless infrastructure app at Primary Web Services LLC in Angular.
       Then became Wordpress Developer that sometimes debugged in Laravel.
@@ -14,8 +15,9 @@
       You can find most of my stuff @
       <a href="https://github.com/notmaiku">Github</a> I'm starting to deprecate any old keys/tokens so I can open source them 🤞
     </p>
-    <hr />
+    </div>
     <p>Some pictures to make this page feel less lonely. You can drag to slide.</p>
+  
     <Slider/>
   </div>
   <Footer/>
