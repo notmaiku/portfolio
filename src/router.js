@@ -10,12 +10,16 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
-      meta: {title: "home"}
+      meta: {
+        title: "home"
+      }
     },
     {
       path: "/exp",
       name: "exp",
-      meta: {title: "Experience"},
+      meta: {
+        title: "Experience"
+      },
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -25,7 +29,9 @@ export default new Router({
     {
       path: "/works",
       name: "works",
-      meta: {title: "Works"},
+      meta: {
+        title: "Works"
+      },
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -36,7 +42,8 @@ export default new Router({
       path: "*",
       name: "notfound",
       component: () =>
-        import( /* webpackChunkName: "view" */ "./views/NotFound.vue")
+        import( /* webpackChunkName: "works" */ "./views/NotFound.vue")
+
     }
   ]
 });
