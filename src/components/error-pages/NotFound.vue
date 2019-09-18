@@ -7,6 +7,9 @@
 
 <script>
 export default {
-  name: "NotFound"
+  name: "NotFound",
+  created() {
+    window.location.href = "/404/"
+  }
 };
 </script>
