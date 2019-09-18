@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
-import NotFound from './components/NotFound.vue'
 
 Vue.use(Router);
 export default new Router({
@@ -21,7 +20,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import( /* webpackChunkName: "about" */ "./views/Exp.vue")
+        import( /* webpackChunkName: "experience" */ "./views/Exp.vue")
     },
     {
       path: "/works",
@@ -31,12 +30,13 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import( /* webpackChunkName: "about" */ "./views/Works.vue")
+        import( /* webpackChunkName: "works" */ "./views/Works.vue")
     },
     {
       path: "*",
       name: "notfound",
-      component: NotFound
+      component: () =>
+        import( /* webpackChunkName: "view" */ "./views/NotFound.vue")
     }
   ]
 });
