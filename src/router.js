@@ -35,7 +35,7 @@ export default new Router({
     {
       path: "*",
       name: "notfound",
-      redirect: "/" 
+      component: NotFound
     }
   ]
 });
