@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import NotFound from "@/components/error-pages/NotFound" 
 
 Vue.use(Router);
 export default new Router({
@@ -40,9 +41,8 @@ export default new Router({
     },
     {
       path: "*",
-      name: "notfound",
-      component: () =>
-        import( /* webpackChunkName: "works" */ "./views/NotFound.vue")
+      name: "NotFound",
+      component: NotFound 
 
     }
   ]
