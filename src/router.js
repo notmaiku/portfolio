@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import NotFound from "@/components/error-pages/NotFound" 
 
 Vue.use(Router);
 export default new Router({
@@ -10,27 +11,39 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
-      meta: {title: "home"}
+      meta: {
+        title: "home"
+      }
     },
     {
-      path: "/Exp",
+      path: "/exp",
       name: "exp",
-      meta: {title: "Experience"},
+      meta: {
+        title: "Experience"
+      },
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import( /* webpackChunkName: "about" */ "./views/Exp.vue")
+        import( /* webpackChunkName: "experience" */ "./views/Exp.vue")
     },
     {
-      path: "/Works",
-      name: "Works",
-      meta: {title: "Works"},
+      path: "/works",
+      name: "works",
+      meta: {
+        title: "Works"
+      },
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import( /* webpackChunkName: "about" */ "./views/Works.vue")
+        import( /* webpackChunkName: "works" */ "./views/Works.vue")
+    },
+    {
+      path: "*",
+      name: "notfound",
+      component: NotFound 
+
     }
   ]
 });
