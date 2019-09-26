@@ -18,6 +18,10 @@ body {
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+strong {
+  font-weight: bold;
+}
 .site-wrap {
   max-width: 1000px;
   margin: 70px auto;
@@ -86,6 +90,24 @@ nav#main li {
   padding: 20px 0;
 }
 
+#exp main ul li {
+  margin: 20px 0px; 
+}
+
+#exp h1 {
+  font-size: 34px;
+  color: rgb(101, 189, 177);
+  text-shadow: none;
+}
+#exp h3 {
+  font-size: 24px;
+  border-bottom: solid rgb(101, 189, 177) 3px;
+  padding-bottom: 10px;
+}
+#exp h4{
+  font-size: 42px;
+  text-decoration: underline;
+}
 li.logo {
   max-width: 0;
   overflow: hidden;
