@@ -60,6 +60,7 @@
     <li>Information Technology Associate of Science Degree</li>
     </ul>
   </main>
+  <Footer/>
 </body>
 </template>
 
@@ -68,12 +69,14 @@
 import Navigation from "@/components/Nav.vue";
 import Header from "@/components/Header.vue";
 import Slider from "@/components/Slider.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "exp",
   components: {
     Header,
     Navigation,
+    Footer,
     Slider
   }
 };

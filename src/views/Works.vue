@@ -1,10 +1,13 @@
 <template>
-  <body>
-    <Header/>
-    <Navigation/>
-    <div class="site-wrap">
-    </div>  
-    </body>
+<body>
+  <Header />
+  <Navigation />
+  <div class="site-wrap">
+    <p> Dev is thinking of what to put here.</p>
+    <img src="../assets/i/THONKING.png" alt="">
+  </div>
+  <Footer />
+</body>
 </template>
 
 <script>
@@ -12,13 +15,15 @@
 import Navigation from "@/components/Nav.vue";
 import Slider from "@/components/Slider.vue";
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
-export default {
-  name: "home",
+export default{
+  name: "footer",
   components: {
     Navigation,
     Slider,
-    Header
+    Header,
+    Footer
   }
 };
 </script>
