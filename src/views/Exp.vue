@@ -72,7 +72,7 @@ import Slider from "@/components/Slider.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "exp",
+  name: "resume",
   components: {
     Header,
     Navigation,
