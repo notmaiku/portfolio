@@ -7,6 +7,6 @@
 <script>
 import Navigation from "./components/Nav";
 export default {
-  components: {Navigation} 
-}
+  components: { Navigation }
+};
 </script>
