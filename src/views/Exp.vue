@@ -11,7 +11,7 @@
       </h3>
       <ul>
         <li>
-          Working closely with my team of analyst I designed and developed a
+          I designed and developed a
           dashboard in VueJS without Node, and its purpose is to host a lot of
           analytics of architecture data.
         </li>
@@ -19,33 +19,29 @@
           Prepared reports and achieved milestones to bring in new technology.
         </li>
         <li>
-          With my team we developed the dashboard to be accessibility focused
-          and cross browser supported for IE 11.
+	   Created a processe for Cross Compatability with IE 11 by creating custom PolyFills, implementing library solutions such as babel and corejs.
         </li>
         <li>
-          Some of the visualizations are created with D3js, but most are
-          embedded with a BI Tool.
+          Developed visualizations and created a system to host embedded BI Tool charts.
         </li>
       </ul>
       <h3>Crier Media Group(Front-end): March 2019 - July 2019</h3>
       <ul>
         <li>
-          For WordPress what I did was Design ->
-          <strong>custom template HTML/CSS</strong> -> plug into WordPress.
+	Designed and Developed custom wordpress templates and plugins.
         </li>
         <li>
-          Working on the main site which is in Laravel/PHP. I styled the
-          dashboard and <strong>proposed designs</strong>.
+          Developed tab features for Laravel Dashboard 
         </li>
         <li>
-          Then worked out a readability script <strong>crawler</strong> (article
+          Developed a readability script <strong>crawler</strong> (article
           without ads), and debug front end bugs.
         </li>
       </ul>
       <h3>Primary Web Services(Front-end): July 2018 - March 2019</h3>
       <ul>
         <li>
-          At this company I was working on a high-profile wireless
+          Developed on a  high-profile wireless
           infrastructure application including
           <strong>live data visualization</strong> and
           <strong>micro-service ingestion</strong>.
@@ -56,7 +52,7 @@
           multi-modular application in <strong>Angular 6/7</strong>.
         </li>
         <li>
-          Agile workflow with client and built in a test-driven environment.
+          Worked in an agile workflow with client and built in a test-driven environment.
         </li>
       </ul>
       <h2>Side Projects</h2>
