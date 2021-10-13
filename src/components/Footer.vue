@@ -7,6 +7,5 @@
             <li><a href="mailto: notmaiku@protonmail.com"><i class="fas fa-envelope-square"></i></a></li>
         </ul>
     </nav> 
-            <p>© 2019, Michael Davis</p>
 </footer>
 </template>
