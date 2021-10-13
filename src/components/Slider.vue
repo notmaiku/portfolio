@@ -29,7 +29,6 @@ export default {
       ],
       slider: null
     };
-  },
+  }
 };
 </script>
-

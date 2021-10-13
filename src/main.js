@@ -4,9 +4,9 @@ import router from "./router";
 
 Vue.config.productionTip = false;
 
-import "./assets/styles/style.css"
-window.$ = require('jquery')
-window.JQuery = require('jquery')
+import "./assets/styles/style.css";
+window.$ = require("jquery");
+window.JQuery = require("jquery");
 
 new Vue({
   router,

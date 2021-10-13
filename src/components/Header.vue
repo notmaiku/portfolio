@@ -1,11 +1,11 @@
 <template>
-        <header>
-            <img class="logopic" src="../assets/i/logotrans.png" />
-        </header>
+  <header>
+    <img class="logopic" src="../assets/i/logotrans.png" />
+  </header>
 </template>
 
 <script>
-    export default {
-        name: "Header",
-    };
+export default {
+  name: "Header"
+};
 </script>
